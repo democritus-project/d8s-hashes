@@ -1,1 +1,1 @@
-git+https://github.com/fhightower/ppyssdeep#egg=ppyssdeep
+git+https://github.com/fhightower/ppyssdeep.git#egg=ppyssdeep
