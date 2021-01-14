@@ -20,3 +20,10 @@ def validate_arg_value(arg_index: Union[str, int, float], valid_values: List[str
         return wrapper
 
     return actual_decorator
+
+
+def string_encode_as_bytes(input_string: Union[str, bytes], encoding: str = 'utf-8', **kwargs):
+    if isinstance(input_string, str):
+        return input_string.encode(encoding, **kwargs)
+    else:
+        return input_string

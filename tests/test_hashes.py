@@ -10,6 +10,7 @@ from democritus_hashes import (
 
 def test_md5_1():
     assert md5('foobar') == '3858f62230ac3c915f300c664312c63f'
+    assert md5(b'foobar') == '3858f62230ac3c915f300c664312c63f'
 
 
 def test_sha1_1():
