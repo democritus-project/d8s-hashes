@@ -2,6 +2,8 @@ import hashlib
 
 import ppyssdeep
 
+from .hashes_temp_utils import validate_arg_value
+
 
 def ssdeep(input_string: str) -> str:
     """."""
@@ -31,7 +33,7 @@ def sha512(input_string: str) -> str:
     return _string_hash(input_string, 'sha512')
 
 
-# @decorators.validate_arg_value(1, hashlib.algorithms_available)
+@validate_arg_value(1, hashlib.algorithms_available)
 def _string_hash(input_string: str, hash_type: str) -> str:
     input_string = input_string.encode('utf-8')
     hash_ = eval('hashlib.{}(input_string).hexdigest()'.format(hash_type))
