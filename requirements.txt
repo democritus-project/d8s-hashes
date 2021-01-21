@@ -1,2 +1,2 @@
-ppyssdeep @ git+https://github.com/fhightower/ppyssdeep.git#egg=ppyssdeep
+ppdeep
 importlib-metadata; python_version < '3.8'

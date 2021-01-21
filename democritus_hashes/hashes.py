@@ -1,20 +1,20 @@
 import hashlib
 from typing import Union
 
-import ppyssdeep
+import ppdeep
 
 from .hashes_temp_utils import validate_arg_value, string_encode_as_bytes
 
 
 def ssdeep(input_string: Union[str, bytes]) -> str:
     """."""
-    return ppyssdeep.ssdeep_hash(string_encode_as_bytes(input_string))
+    return ppdeep.hash(string_encode_as_bytes(input_string))
 
 
 # TODO: I don't think this function is working properly
 def ssdeep_compare(ssdeep_1: str, ssdeep_2: str) -> int:
     """."""
-    return ppyssdeep.ssdeep_compare(ssdeep_1, ssdeep_2)
+    return ppdeep.compare(ssdeep_1, ssdeep_2)
 
 
 def md5(input_string: Union[str, bytes]) -> str:
