@@ -28,9 +28,29 @@ def test_sha512_1():
     )
 
 
-def test_ssdeep_compare_1():
-    result = ssdeep_compare(ssdeep('foo'), ssdeep('fool'))
-    assert result == 0
+def test_ssdeep_1():
+    result = ssdeep('foo')
+    assert result == '3:Nn:N'
 
-    result = ssdeep_compare(ssdeep('this is just a test'), ssdeep('this is just a jest'))
+    result = ssdeep('this is just a test')
+    assert result == '3:YKPQCEPRn:YUg'
+
+
+def test_ssdeep_compare_1():
+    # compare the same string
+    result = ssdeep_compare(
+        ssdeep('when in the course of human events it becomes necessary'),
+        ssdeep('when in the course of human events it becomes necessary'),
+    )
+    assert result == 100
+
+    # compare slightly different strings
+    result = ssdeep_compare(
+        ssdeep('when in the course of human events it becomes unnecessary'),
+        ssdeep('when in the course of human events it becomes necessary'),
+    )
+    assert result == 14
+
+    # if values are very short, differences will not be detected
+    result = ssdeep_compare(ssdeep('foo'), ssdeep('fool'))
     assert result == 0
