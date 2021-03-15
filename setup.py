@@ -12,13 +12,13 @@ with open('requirements_dev.txt') as requirements_dev_file:
     test_requirements = requirements_dev_file.read().splitlines()
 
 setup(
-    name='democritus_hashes',
+    name='d8s_hashes',
     description="Democritus functions for working with hashes.",
     long_description=readme,
     long_description_content_type="text/markdown",
     author="Floyd Hightower",
     author_email='floyd.hightower27@gmail.com',
-    url='https://github.com/democritus-project/democritus-hashes',
+    url='https://github.com/democritus-project/d8s-hashes',
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
     packages=find_packages(exclude=('tests')),
@@ -41,5 +41,5 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
 )

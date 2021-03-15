@@ -1,8 +1,8 @@
 # Democritus Hashes
 
-[![PyPI](https://img.shields.io/pypi/v/democritus-hashes.svg)](https://pypi.python.org/pypi/democritus-hashes)
-[![Build Status](https://travis-ci.com/democritus-project/democritus-hashes.svg?branch=master)](https://travis-ci.com/democritus-project/democritus-hashes)
-[![codecov](https://codecov.io/gh/democritus-project/democritus-hashes/branch/master/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/democritus-hashes)
+[![PyPI](https://img.shields.io/pypi/v/d8s-hashes.svg)](https://pypi.python.org/pypi/d8s-hashes)
+[![Build Status](https://travis-ci.com/democritus-project/d8s-hashes.svg?branch=main)](https://travis-ci.com/democritus-project/d8s-hashes)
+[![codecov](https://codecov.io/gh/democritus-project/d8s-hashes/branch/main/graph/badge.svg?token=V0WOIXRGMM)](https://codecov.io/gh/democritus-project/d8s-hashes)
 
 Democritus functions<sup>[1]</sup> for working with hashes.
 

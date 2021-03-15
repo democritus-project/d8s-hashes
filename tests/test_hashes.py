@@ -1,4 +1,4 @@
-from democritus_hashes import (
+from d8s_hashes import (
     md5,
     sha1,
     sha256,
