@@ -14,9 +14,32 @@ Democritus functions<sup>[1]</sup> for working with hashes.
 
 We use `d8s` as an abbreviation for `democritus` (you can read more about this [here](https://github.com/democritus-project/roadmap#what-is-d8s)).
 
-## Usage
+## Functions
 
-Coming soon...
+  - ```python
+    def ssdeep(input_string: Union[str, bytes]) -> str:
+        """."""
+    ```
+  - ```python
+    def ssdeep_compare(ssdeep_1: str, ssdeep_2: str) -> int:
+        """."""
+    ```
+  - ```python
+    def md5(input_string: Union[str, bytes]) -> str:
+        """."""
+    ```
+  - ```python
+    def sha1(input_string: Union[str, bytes]) -> str:
+        """."""
+    ```
+  - ```python
+    def sha256(input_string: Union[str, bytes]) -> str:
+        """."""
+    ```
+  - ```python
+    def sha512(input_string: Union[str, bytes]) -> str:
+        """Return the sha512 hash of the string."""
+    ```
 
 ## Development
 
